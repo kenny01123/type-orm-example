@@ -1,3 +1,4 @@
+require('dotenv').config() 
 import express, { Application } from "express";
 import { Middleware, ErrorHandlingMiddleware } from "./middleware/types";
 import BaseController from "./services/common/controller";
