@@ -17,10 +17,11 @@
 
 export = {
   type: "postgres",
+  url: process.env.DATABASE_URL,
   host: process.env.DB_HOST || "localhost",
   port: process.env.DB_PORT || 5432,
-  username: process.env.DB_USER || "expense_manager",
-  password: process.env.DB_PASSWORD || "expense_manager",
+  username: process.env.DB_USER || "kenny",
+  //password: process.env.DB_PASSWORD || "expense_manager",
   database: process.env.DB_NAME || "expense_manager",
   entities: ["src/entities/**/*.ts"],
   migrations: ["src/migrations/**/*.ts"],
